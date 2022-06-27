@@ -2,7 +2,7 @@ Vue.component('top-nav-bar', {
     template: `
     <div>
         <div class="jumbotron text-center text-white" style="margin-bottom:0;
-            background-image: url('Images/TechBanner.jpg');
+            background-image: url('https://ksventures.github.io/Templates/Images/TechBanner.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;">
@@ -17,9 +17,6 @@ Vue.component('top-nav-bar', {
             <ul class="navbar-nav">
                 <li class="nav-item">
                 <a class="nav-link" href="thermistortest.html">Thermistor Testing</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="vavflow.html">VAV Flow Calculator</a>
                 </li>
             </ul>
             </div>
