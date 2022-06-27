@@ -1,0 +1,92 @@
+var controllerData = [
+    {
+        "Model": "ECB-600",
+        "Manufacturer": "Distech",
+        "CommType": ["Bacnet/MSTP"],
+        "IO": {
+            "AICount": 0,
+            "DICount": 0,
+            "UICount": 16,
+            "AOCount": 0,
+            "DOCount": 0,
+            "UOCount": 12,
+            "IntegralActuator": false,
+        },
+        "PurchasingInfo": {
+            "ListPrice": 0,
+            "LastUpdated": 0,
+        },
+    },
+    {
+        "Model": "ECB-400",
+        "Manufacturer": "Distech",
+        "CommType": ["Bacnet/MSTP"],
+        "IO": {
+            "AICount": 0,
+            "DICount": 0,
+            "UICount": 12,
+            "AOCount": 0,
+            "DOCount": 0,
+            "UOCount": 12,
+            "IntegralActuator": false,
+        },
+        "PurchasingInfo": {
+            "ListPrice": 0,
+            "LastUpdated": 0,
+        },
+    },
+    {
+        "Model": "ECB-300",
+        "Manufacturer": "Distech",
+        "CommType": ["Bacnet/MSTP"],
+        "IO": {
+            "AICount": 0,
+            "DICount": 0,
+            "UICount": 10,
+            "AOCount": 0,
+            "DOCount": 0,
+            "UOCount": 8,
+            "IntegralActuator": false,
+        },
+        "PurchasingInfo": {
+            "ListPrice": 0,
+            "LastUpdated": 0,
+        },
+    },
+    {
+        "Model": "ECB-203",
+        "Manufacturer": "Distech",
+        "CommType": ["Bacnet/MSTP"],
+        "IO": {
+            "AICount": 0,
+            "DICount": 0,
+            "UICount": 6,
+            "AOCount": 0,
+            "DOCount": 5,
+            "UOCount": 3,
+            "IntegralActuator": false,
+        },
+        "PurchasingInfo": {
+            "ListPrice": 0,
+            "LastUpdated": 0,
+        },
+    },
+    {
+        "Model": "FX-PCG-2621",
+        "Manufacturer": "JCI",
+        "CommType": ["N2", "Bacnet/MSTP"],
+        "IO": {
+            "AICount": 0,
+            "DICount": 2,
+            "UICount": 6,
+            "AOCount": 2,
+            "DOCount": 3,
+            "UOCount": 4,
+            "IntegralActuator": false,
+        },
+        "PurchasingInfo": {
+            "ListPrice": 0,
+            "LastUpdated": 0,
+        },
+    },
+];
