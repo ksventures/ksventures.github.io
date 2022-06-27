@@ -9,7 +9,7 @@ Vue.component('top-nav-bar', {
             <h1>K&S Ventures Tools</h1>
         </div>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <a class="navbar-brand" href="index.html">K&S Ventures Tools</a>
+            <a class="navbar-brand" href="https://ksventures.github.io">K&S Ventures Tools</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
             </button>
