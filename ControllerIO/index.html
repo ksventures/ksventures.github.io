@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="controllerData.js"></script>
+    </head>
+    <style>input[type='number']{width: 40px}</style>
+    <script src="javascript.js"></script>
+    <body style="background-color:black">
+        <div id="app"><top-nav-bar></top-nav-bar></div>
+        <br>
+        <div class="text-white container">
+			<div class="row">
+                <div class="col-lg text-center">
+                    <label for="JCI">JCI:</label>
+                    <input type="checkbox" id="jci" name="JCI" class="text-white bg-dark" checked>
+                    <label for="Distech">Distech:</label>
+                    <input type="checkbox" id="distech" name="Distech" class="text-white bg-dark" checked>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg text-center">
+                    <label for="BacnetIP">Bacnet/IP:</label>
+                    <input type="checkbox" id="bacnetIp" name="BacnetIP" class="text-white bg-dark" checked>
+                    <label for="BacnetMSTP">Bacnet/MSTP:</label>
+                    <input type="checkbox" id="bacnetMstp" name="BacnetMSTP" class="text-white bg-dark" checked>
+                    <label for="Lon">Lon:</label>
+                    <input type="checkbox" id="lon" name="Lon" class="text-white bg-dark" checked>
+                    <label for="N2">N2:</label>
+                    <input type="checkbox" id="n2" name="N2" class="text-white bg-dark" checked>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg text-center">
+                    <label for="AICount">AI Count:</label>
+                    <input type="number" id="aiCount" name="AICount" class="text-white bg-dark" value=0>
+                    <label for="DICount">DI Count:</label>
+                    <input type="number" id="diCount" name="DICount" class="text-white bg-dark" value=0>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg text-center">
+                    <label for="AOCount">AO Count:</label>
+                    <input type="number" id="aoCount" name="AOCount" class="text-white bg-dark" value=0>
+                    <label for="DOCount">DO Count:</label>
+                    <input type="number" id="doCount" name="DOCount" class="text-white bg-dark" value=0>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg text-center">
+                    <label for="IntegralActuator">Integral Actuator:</label>
+                    <input type="checkbox" id="integralActuator" name="IntegralActuator" class="text-white bg-dark">
+                    <label for="NetStatCount">Net Stat Count:</label>
+                    <input type="number" id="netStatCount" name="netStatCount" class="text-white bg-dark" value=0>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg text-center">
+                    <input type="button" id="submit" name="Submit" class="text-white bg-dark" value="Submit!" onclick="updateFilterSettings()">
+                </div>
+            </div>
+        </div>
+        <script src="https://ksventures.github.io/Templates/top-nav-bar.js"></script>
+        <script>
+            Vue.app = new Vue({
+                el: '#app'
+            });
+        </script>
+    </body>
+</html>

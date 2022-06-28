@@ -2,7 +2,7 @@ var controllerData = [
     {
         "Model": "ECB-600",
         "Manufacturer": "Distech",
-        "CommType": ["Bacnet/MSTP"],
+        "CommType": ["BacnetMSTP"],
         "IO": {
             "AICount": 0,
             "DICount": 0,
@@ -11,6 +11,7 @@ var controllerData = [
             "DOCount": 0,
             "UOCount": 12,
             "IntegralActuator": false,
+            "netStatCount": 12,
         },
         "PurchasingInfo": {
             "ListPrice": 0,
@@ -20,7 +21,7 @@ var controllerData = [
     {
         "Model": "ECB-400",
         "Manufacturer": "Distech",
-        "CommType": ["Bacnet/MSTP"],
+        "CommType": ["BacnetMSTP"],
         "IO": {
             "AICount": 0,
             "DICount": 0,
@@ -29,6 +30,7 @@ var controllerData = [
             "DOCount": 0,
             "UOCount": 12,
             "IntegralActuator": false,
+            "netStatCount": 12,
         },
         "PurchasingInfo": {
             "ListPrice": 0,
@@ -38,7 +40,7 @@ var controllerData = [
     {
         "Model": "ECB-300",
         "Manufacturer": "Distech",
-        "CommType": ["Bacnet/MSTP"],
+        "CommType": ["BacnetMSTP"],
         "IO": {
             "AICount": 0,
             "DICount": 0,
@@ -47,6 +49,7 @@ var controllerData = [
             "DOCount": 0,
             "UOCount": 8,
             "IntegralActuator": false,
+            "netStatCount": 12,
         },
         "PurchasingInfo": {
             "ListPrice": 0,
@@ -56,7 +59,7 @@ var controllerData = [
     {
         "Model": "ECB-203",
         "Manufacturer": "Distech",
-        "CommType": ["Bacnet/MSTP"],
+        "CommType": ["BacnetMSTP"],
         "IO": {
             "AICount": 0,
             "DICount": 0,
@@ -65,6 +68,7 @@ var controllerData = [
             "DOCount": 5,
             "UOCount": 3,
             "IntegralActuator": false,
+            "netStatCount": 4,
         },
         "PurchasingInfo": {
             "ListPrice": 0,
@@ -72,9 +76,161 @@ var controllerData = [
         },
     },
     {
-        "Model": "FX-PCG-2621",
+        "Model": "ECB-103",
+        "Manufacturer": "Distech",
+        "CommType": ["BacnetMSTP"],
+        "IO": {
+            "AICount": 0,
+            "DICount": 0,
+            "UICount": 4,
+            "AOCount": 0,
+            "DOCount": 4,
+            "UOCount": 2,
+            "IntegralActuator": false,
+            "netStatCount": 4,
+        },
+        "PurchasingInfo": {
+            "ListPrice": 0,
+            "LastUpdated": 0,
+        },
+    },
+    {
+        "Model": "ECB-VAV",
+        "Manufacturer": "Distech",
+        "CommType": ["BacnetMSTP"],
+        "IO": {
+            "AICount": 0,
+            "DICount": 0,
+            "UICount": 4,
+            "AOCount": 0,
+            "DOCount": 4,
+            "UOCount": 2,
+            "IntegralActuator": true,
+            "netStatCount": 4,
+        },
+        "PurchasingInfo": {
+            "ListPrice": 0,
+            "LastUpdated": 0,
+        },
+    },
+    {
+        "Model": "ECL-600",
+        "Manufacturer": "Distech",
+        "CommType": ["Lon"],
+        "IO": {
+            "AICount": 0,
+            "DICount": 0,
+            "UICount": 16,
+            "AOCount": 0,
+            "DOCount": 0,
+            "UOCount": 12,
+            "IntegralActuator": false,
+            "netStatCount": 12,
+        },
+        "PurchasingInfo": {
+            "ListPrice": 0,
+            "LastUpdated": 0,
+        },
+    },
+    {
+        "Model": "ECL-400",
+        "Manufacturer": "Distech",
+        "CommType": ["Lon"],
+        "IO": {
+            "AICount": 0,
+            "DICount": 0,
+            "UICount": 12,
+            "AOCount": 0,
+            "DOCount": 0,
+            "UOCount": 12,
+            "IntegralActuator": false,
+            "netStatCount": 12,
+        },
+        "PurchasingInfo": {
+            "ListPrice": 0,
+            "LastUpdated": 0,
+        },
+    },
+    {
+        "Model": "ECL-300",
+        "Manufacturer": "Distech",
+        "CommType": ["Lon"],
+        "IO": {
+            "AICount": 0,
+            "DICount": 0,
+            "UICount": 10,
+            "AOCount": 0,
+            "DOCount": 0,
+            "UOCount": 8,
+            "IntegralActuator": false,
+            "netStatCount": 12,
+        },
+        "PurchasingInfo": {
+            "ListPrice": 0,
+            "LastUpdated": 0,
+        },
+    },
+    {
+        "Model": "ECL-203",
+        "Manufacturer": "Distech",
+        "CommType": ["Lon"],
+        "IO": {
+            "AICount": 0,
+            "DICount": 0,
+            "UICount": 6,
+            "AOCount": 0,
+            "DOCount": 5,
+            "UOCount": 3,
+            "IntegralActuator": false,
+            "netStatCount": 4,
+        },
+        "PurchasingInfo": {
+            "ListPrice": 0,
+            "LastUpdated": 0,
+        },
+    },
+    {
+        "Model": "ECL-103",
+        "Manufacturer": "Distech",
+        "CommType": ["Lon"],
+        "IO": {
+            "AICount": 0,
+            "DICount": 0,
+            "UICount": 4,
+            "AOCount": 0,
+            "DOCount": 4,
+            "UOCount": 2,
+            "IntegralActuator": false,
+            "netStatCount": 4,
+        },
+        "PurchasingInfo": {
+            "ListPrice": 0,
+            "LastUpdated": 0,
+        },
+    },
+    {
+        "Model": "ECL-VAV",
+        "Manufacturer": "Distech",
+        "CommType": ["Lon"],
+        "IO": {
+            "AICount": 0,
+            "DICount": 0,
+            "UICount": 4,
+            "AOCount": 0,
+            "DOCount": 4,
+            "UOCount": 2,
+            "IntegralActuator": true,
+            "netStatCount": 4,
+        },
+        "PurchasingInfo": {
+            "ListPrice": 0,
+            "LastUpdated": 0,
+        },
+    },
+    {
+        "Model": "FX-PCG2621",
         "Manufacturer": "JCI",
-        "CommType": ["N2", "Bacnet/MSTP"],
+        "CommType": ["N2", "BacnetMSTP"],
         "IO": {
             "AICount": 0,
             "DICount": 2,
@@ -83,6 +239,7 @@ var controllerData = [
             "DOCount": 3,
             "UOCount": 4,
             "IntegralActuator": false,
+            "netStatCount": 0,
         },
         "PurchasingInfo": {
             "ListPrice": 0,
