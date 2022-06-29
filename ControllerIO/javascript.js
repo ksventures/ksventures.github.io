@@ -58,6 +58,7 @@ function singleControllerCheck(controllerObject, filterObject) {
     if (workingAO < 0) {workingAO = 0};
     if (workingDO < 0) {workingDO = 0};
     if (((workingAI + workingDI) <= controllerObject.IO.UICount) && ((workingAO + workingDO) <= controllerObject.IO.UOCount)) {ioMatch = true};
+    if (filterObject.controllerIO.IntegralActuator && !controllerObject.IO.IntegralActuator) {ioMatch = false};
     console.log("Controller: " + controllerObject.Model + "   Brand Match: ", brandMatch, "    Comm Match: ", commMatch, "    ioMatch: ", ioMatch);
     if (brandMatch && commMatch && ioMatch) {return true} else {return false};
 };
