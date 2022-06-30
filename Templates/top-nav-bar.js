@@ -18,6 +18,9 @@ Vue.component('top-nav-bar', {
                 <li class="nav-item">
                 <a class="nav-link" href="https://ksventures.github.io/ThermistorTesting/index.html">Thermistor Testing</a>
                 </li>
+                <li class="nav-item">
+                <a class="nav-link" href="https://ksventures.github.io/ControllerIO/index.html">Controller Picker (WIP)</a>
+                </li>
             </ul>
             </div>
         </nav>
