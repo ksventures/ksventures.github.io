@@ -32,7 +32,9 @@ function updateFilterSettings() {
     filterSettings.controllerIO.DOCount = document.getElementById("doCount").value;
     filterSettings.controllerIO.IntegralActuator = document.getElementById("integralActuator").checked;
     filterSettings.controllerIO.NetStatCount = document.getElementById("netStatCount").value;
-    console.log(filterControllers(controllerData, filterSettings));
+    refreshCards(
+        filterControllers(controllerData, filterSettings)
+    );
 };
 
 function singleControllerCheck(controllerObject, filterObject) {
@@ -59,7 +61,6 @@ function singleControllerCheck(controllerObject, filterObject) {
     if (workingDO < 0) {workingDO = 0};
     if (((workingAI + workingDI) <= controllerObject.IO.UICount) && ((workingAO + workingDO) <= controllerObject.IO.UOCount)) {ioMatch = true};
     if (filterObject.controllerIO.IntegralActuator && !controllerObject.IO.IntegralActuator) {ioMatch = false};
-    console.log("Controller: " + controllerObject.Model + "   Brand Match: ", brandMatch, "    Comm Match: ", commMatch, "    ioMatch: ", ioMatch);
     if (brandMatch && commMatch && ioMatch) {return true} else {return false};
 };
 
@@ -71,4 +72,55 @@ function filterControllers (controllerObject, filterObject) {
         };
     };
     return matchingControllers;
+}
+
+function createControllerCard(controllerObject) {
+    var commString = "";
+    for (i=0; i<controllerObject.CommType.length; i++) {
+        if (i==0) {commString = commString + controllerObject.CommType[i]} else
+        {commString = ', ' + controllerObject.CommType[i]}
+    }
+    var integralActuatorString = ''
+    if (controllerObject.IO.IntegralActuator) {
+        integralActuatorString = ', Integrated Actuator'
+    }
+    //There is probably a better way to make these elements, but this worked and didn't require any research
+    var controllerCard =
+    '<div class="card text-white bg-dark"><div class="card-header"><h3 class="card-title">'
+    + controllerObject.Manufacturer
+    + ' - '
+    + controllerObject.Model
+    + '</h3></div><div class="card-body"><p class="card-text">Comm Protocols: '
+    + commString
+    + '</p><p class="card-text">Inputs: x'
+    + controllerObject.IO.AICount
+    + ' AI, x'
+    + controllerObject.IO.DICount
+    + ' DI, x'
+    + controllerObject.IO.UICount
+    + ' UI, x'
+    + controllerObject.IO.netStatCount
+    + ' Networked Thermostats</p><p class="card-text">Outputs: x'
+    + controllerObject.IO.AOCount
+    + ' AO, x'
+    + controllerObject.IO.DOCount
+    + ' DO, x'
+    + controllerObject.IO.UOCount
+    + ' UO'
+    + integralActuatorString
+    + '</p><p class="card-text">List Price: $'
+    + controllerObject.PurchasingInfo.ListPrice
+    + ', last updated on '
+    + controllerObject.PurchasingInfo.LastUpdated
+    + '</p></div></div>'
+    var controllerElement = new DOMParser().parseFromString(controllerCard, 'text/html').body.childNodes[0];
+    return controllerElement;
+}
+
+function refreshCards (controllerObject) {
+    var cardContainer = document.getElementById("ControllerCards");
+    cardContainer.innerHTML = '';
+    for (j=0; j<controllerObject.length; j++) {
+        cardContainer.append(createControllerCard(controllerObject[j]));
+    }
 }
