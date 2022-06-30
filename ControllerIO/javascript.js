@@ -86,7 +86,7 @@ function createControllerCard(controllerObject) {
     }
     //There is probably a better way to make these elements, but this worked and didn't require any research
     var controllerCard =
-    '<div class="card text-white bg-dark"><div class="card-header"><h3 class="card-title">'
+    '<div class="card text-white bg-dark mt-5"><div class="card-header"><h3 class="card-title">'
     + controllerObject.Manufacturer
     + ' - '
     + controllerObject.Model
